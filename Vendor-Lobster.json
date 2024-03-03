@@ -8,7 +8,7 @@
         {
             "manifest": "https://raw.githubusercontent.com/h53h54h55/Syncler/main/Manifest-Lobster.json",
             "description": "Lobster Starter - Only the top 5 sources included (may run faster)"
-        }
+        },
         {
             "manifest": "https://raw.githubusercontent.com/h53h54h55/Syncler/main/Manifest-Lobster.json",
             "description": "The full lobster dinner - Every source included (slower)"
