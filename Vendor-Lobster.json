@@ -6,7 +6,7 @@
     "website": "https://www.reddit.com/r/synclervendors/",
     "packages": [
         {
-            "manifest": "https://raw.githubusercontent.com/h53h54h55/Syncler/main/Manifest-Lobster.json",
+            "manifest": "https://raw.githubusercontent.com/h53h54h55/Experimental/main/Manifest-Lobster.json",
             "description": "Lobster Starter - Only the top 5 sources included (may run faster)"
         }
     ],
@@ -15,7 +15,7 @@
     ],
     "defaults": {
         "packages": [
-            "https://raw.githubusercontent.com/h53h54h55/Syncler/main/Manifest-Lobster.json"
+            "https://raw.githubusercontent.com/h53h54h55/Experimental/main/Manifest-Lobster.json"
         ],
         "cacheServer": "cache.bouncy.cc"
     }
