@@ -10,7 +10,7 @@
             "description": "Full Lobster Dinner - Every source included"
         }
         {
-            "manifest": "https://raw.githubusercontent.com/h53h54h55/Experimental/main/Manifest-Lobster.json",
+            "manifest": "https://raw.githubusercontent.com/h53h54h55/Experimental/main/Manifest-Starter.json",
             "description": "Lobster Starter - Only the top 5 sources included (may run faster)"
         }
     ],
