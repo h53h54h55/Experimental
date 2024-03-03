@@ -5,10 +5,3 @@
   "url": "https://raw.githubusercontent.com/h53h54h55/Experimental/main/Lobster.json",
   "type": "express"
 }
-{
-  "name": "Lobster - Starter",
-  "id": "lob.starter",
-  "version": 1.0,
-  "url": "https://raw.githubusercontent.com/h53h54h55/Experimental/main/Lobster-Starter.json",
-  "type": "express"
-}
