@@ -7,7 +7,7 @@
     "permaUrl": "https://raw.githubusercontent.com/h53h54h55/Syncler/main/Lobster1.0.json"
   },
     "yts": {
-        "name": "Lobster-YTS",
+        "name": "YTS",
         "enabled": true,
         "languages": [
             "en"
@@ -42,6 +42,6 @@
             "\"": "",
             "*": ""
         }
-  }
+   }
 }
 
