@@ -6,42 +6,55 @@
     "classPath": "",
     "permaUrl": "https://raw.githubusercontent.com/h53h54h55/Experimental/main/parsetest.json"
   },
-    "yts": {
-        "name": "YTS",
-        "enabled": true,
-        "languages": [
-            "en"
-        ],
-        "base_url": "https://yts.mx",
-        "fallback_urls": [
-            "https://yts.pm",
-            "https://yts.unblocked.lat"
-        ],
-        "response_type": "json",
-        "trust_results": true,
-        "movie": {
-            "query": "/api/v2/list_movies.json?query_term={query}&sort_by=seeds&order_by=desc",
-            "keywords": "{imdbId}"
-        },
-        "json_format": {
-            "results": "data.movies",
-            "sub_results": "torrents",
-            "url": "magnet:?xt=urn:btih:{hash}&tr=http://track.one:1234/announce&tr=udp://track.two:80",
-            "title": "title_long",
-            "seeds": "seeds",
-            "peers": "peers",
-            "size": "size",
-            "quality": "quality",
-            "hash": "hash"
-        },
-        "title_replacement": {
-            ".": "",
-            ":": "",
-            "'": "",
-            "&": "",
-            "\"": "",
-            "*": ""
-        }
+   "thepiratebaytext": {
+    "base_url": "https://pirateproxy.live",
+    "enabled": true,
+    "episode": {
+      "keywords": [
+        "{title} {episodeCode}",
+        "{title} {season}"
+      ],
+      "query": "/s/?q={query}&page=0&&video=on&orderby=99"
+    },
+    "fallback_urls": [
+      "https://thepiratebay.org",
+      "https://thepiratebay.fun",
+      "https://thepiratebay.asia",
+      "https://tpb.party",
+      "https://thepiratebay3.org",
+      "https://thepiratebayz.org",
+      "https://thehiddenbay.com",
+      "https://piratebay.live",
+      "https://thepiratebay.zone"
+    ],
+    "html_parser": {
+      "peers": "row.querySelector('td:nth-child(4)') ? row.querySelector('td:nth-child(4)').textContent : ''",
+      "row": "doc.querySelectorAll('tbody tr')",
+      "seeds": "row.querySelector('td:nth-child(3)') ? row.querySelector('td:nth-child(3)').textContent : ''",
+      "size": "row.querySelector('font') ? row.querySelector('font').textContent.split(',')[1].replace(/size/i,'') : ''",
+      "title": "row.querySelector('div') ? row.querySelector('div').textContent : ''",
+      "url": "row.querySelector('td:nth-child(2) a:nth-child(2)') ? row.querySelector('td:nth-child(2) a:nth-child(2)').getAttribute('href') : ''"
+    },
+    "languages": [
+      "en"
+    ],
+    "movie": {
+      "keywords": "{title} {year}",
+      "query": "/s/?q={query}&page=0&&video=on&orderby=99"
+    },
+    "name": "Pirate test",
+    "response_type": "text",
+    "season": {
+      "keywords": [
+        "{title} {seasonCode}"
+      ],
+      "query": "/s/?q={query}&page=0&&video=on&orderby=99"
+    },
+    "title_replacement": {
+      "\"": "",
+      "'s": "s"
+    }
+
    }
 }
 
