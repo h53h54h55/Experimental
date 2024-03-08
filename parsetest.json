@@ -9,9 +9,7 @@
   "oxtorrent": {
         "name": "OXTORRENT",
         "enabled": true,
-        "languages": [
-            "fr"
-        ],
+        "languages": ["fr"],
         "base_url": "https://oxtorrent.nl",
         "fallback_urls": [],
         "response_type": "text",
@@ -60,9 +58,7 @@
   "torrent9": {
         "name": "TORRENT NINE",
         "enabled": true,
-        "languages": [
-            "fr"
-        ],
+        "languages": ["fr"],
         "base_url": "https://torrent9.to",
         "fallback_urls": [],
         "response_type": "text",
