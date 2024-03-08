@@ -26,9 +26,7 @@
             "query": "/recherche/{query}",
             "keywords": [
                 "{title.fr} {episodeCode}",
-                "{title} {episodeCode}",
-                "{title.fr} {year} {episodeCode}",
-                "{title} {year} {episodeCode}"
+                "{title.fr} {year} {episodeCode}"
             ]
         },
         "season": {
