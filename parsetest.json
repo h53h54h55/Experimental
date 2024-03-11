@@ -101,7 +101,7 @@
       },
       "episode": {
           "query": "/{titleFirstLetter}/{query}/",
-          "keywords": "{title} {episodeCode}"
+          "keywords": ["{title} {year}", "{title} {episodeCode}"]
       },
       "season": {
           "query": "/{titleFirstLetter}/{query}/",
@@ -124,7 +124,7 @@
       "base_url": "https://eztvx.to",
       "enabled": true,
       "episode": {
-        "keywords": "{title} {year} {episodeCode}",
+        "keywords": "{title} {episodeCode}",
         "query": "/search/{query}"
       },
       "fallback_urls": [
