@@ -56,16 +56,24 @@
         "https://thepiratebay.zone"
       ],
       "movie": {
-        "keywords": "{title} {year}",
-        "query": "/s/?q={query}&page=0&&video=on&orderby=99"
+        "query": "/s/?q={query}&page=0&&video=on&orderby=99",
+        "keywords": "{title} {year}"
       },
       "season": {
-        "keywords": ["{title} season","{title} {seasonCode}"],
-        "query": "/s/?q={query}&page=0&&video=on&orderby=99"
+        "query": "/s/?q={query}&page=0&&video=on&orderby=99",
+        "keywords": [
+          "{title} {seasonCode}",
+          "{title} season",
+          "{title} {year} {seasonCode}",
+          "{title} {year} season"
+      ]
       },
       "episode": {
-        "keywords": ["{title} {episodeCode}","{title} {season}"],
-        "query": "/s/?q={query}&page=0&&video=on&orderby=99"
+        "query": "/s/?q={query}&page=0&&video=on&orderby=99",
+        "keywords": [
+          "{title} {episodeCode}",
+          "{title} {year} {episodeCode}"
+      ]
       },
       "html_parser": {
         "peers": "row.querySelector('td:nth-child(4)') ? row.querySelector('td:nth-child(4)').textContent : ''",
