@@ -2,7 +2,7 @@
   "_manifest" : {
     "name": "Lobstor",
     "id": "lob.express",
-    "version": 1.1,
+    "version": "1.1",
     "classPath": "",
     "permaUrl": "https://raw.githubusercontent.com/h53h54h55/Syncler/main/Lobstor.json"
   },
@@ -89,7 +89,7 @@
     },
     "magnetdl": {
       "name": "MAGNETDL",
-      "enabled": false,
+      "enabled": true,
       "languages": ["en"],
       "base_url": "https://www.magnetdl.com",
       "fallback_urls": ["https://torrentquest.com"],
