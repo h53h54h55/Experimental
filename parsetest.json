@@ -38,15 +38,11 @@
         }
     },
   "thepiratebaytext": {
+    "name": "PBAY",
+    "enabled": true,
+    "response_type": "text",
+    "languages": ["en"],
       "base_url": "https://pirateproxylive.org",
-      "enabled": true,
-      "episode": {
-        "keywords": [
-          "{title} {episodeCode}",
-          "{title} {season}"
-        ],
-        "query": "/s/?q={query}&page=0&&video=on&orderby=99"
-      },
       "fallback_urls": [
         "https://pirateproxy.live",
         "https://thepiratebay.party",
@@ -59,6 +55,18 @@
         "https://piratebay.live",
         "https://thepiratebay.zone"
       ],
+      "movie": {
+        "keywords": "{title} {year}",
+        "query": "/s/?q={query}&page=0&&video=on&orderby=99"
+      },
+      "season": {
+        "keywords": ["{title} {seasonCode}"],
+        "query": "/s/?q={query}&page=0&&video=on&orderby=99"
+      },
+      "episode": {
+        "keywords": ["{title} {episodeCode}","{title} {season}"],
+        "query": "/s/?q={query}&page=0&&video=on&orderby=99"
+      },
       "html_parser": {
         "peers": "row.querySelector('td:nth-child(4)') ? row.querySelector('td:nth-child(4)').textContent : ''",
         "row": "doc.querySelectorAll('tbody tr')",
@@ -66,21 +74,6 @@
         "size": "row.querySelector('font') ? row.querySelector('font').textContent.split(',')[1].replace(/size/i,'') : ''",
         "title": "row.querySelector('div') ? row.querySelector('div').textContent : ''",
         "url": "row.querySelector('td:nth-child(2) a:nth-child(2)') ? row.querySelector('td:nth-child(2) a:nth-child(2)').getAttribute('href') : ''"
-      },
-      "languages": [
-        "en"
-      ],
-      "movie": {
-        "keywords": "{title} {year}",
-        "query": "/s/?q={query}&page=0&&video=on&orderby=99"
-      },
-      "name": "PBAY",
-      "response_type": "text",
-      "season": {
-        "keywords": [
-          "{title} {seasonCode}"
-        ],
-        "query": "/s/?q={query}&page=0&&video=on&orderby=99"
       },
       "title_replacement": {
         "\"": "",
