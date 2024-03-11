@@ -60,7 +60,7 @@
         "keywords": "{title} {year}"
       },
       "season": {
-        "query": "/s/?q={query}&page=0&&video=on&orderby=99",
+        "query": "/s/?q={query}&cat=208,205&page=0&&video=on&orderby=99",
         "keywords": [
           "{title} {seasonCode}",
           "{title} season",
