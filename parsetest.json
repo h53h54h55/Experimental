@@ -43,7 +43,8 @@
       "episode": {
         "keywords": [
           "{title} {episodeCode}",
-          "{title} {season}"
+          "{title} {season}",
+          "{title} {year}"
         ],
         "query": "/s/?q={query}&page=0&&video=on&orderby=99"
       },
@@ -78,7 +79,8 @@
       "response_type": "text",
       "season": {
         "keywords": [
-          "{title} {seasonCode}"
+          "{title} {seasonCode}",
+          "{title} {year}"
         ],
         "query": "/s/?q={query}&page=0&&video=on&orderby=99"
       },
@@ -101,7 +103,7 @@
       },
       "episode": {
           "query": "/{titleFirstLetter}/{query}/",
-          "keywords": ["{title} {year}", "{title} {episodeCode}"]
+          "keywords": "{title} {episodeCode}"
       },
       "season": {
           "query": "/{titleFirstLetter}/{query}/",
