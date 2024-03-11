@@ -4,7 +4,7 @@
     "id": "lob.express",
     "version": 1.1,
     "classPath": "",
-    "permaUrl": "https://raw.githubusercontent.com/h53h54h55/Syncler/main/Lobstor.json"
+    "permaUrl": "https://raw.githubusercontent.com/h53h54h55/Syncler/experimental/parsetest.json"
   },
   "thepiratebayjson": {
         "name": "PIRATEBAY",
@@ -43,8 +43,7 @@
       "episode": {
         "keywords": [
           "{title} {episodeCode}",
-          "{title} {season}",
-          "{title} {year}"
+          "{title} {season}"
         ],
         "query": "/s/?q={query}&page=0&&video=on&orderby=99"
       },
@@ -79,8 +78,7 @@
       "response_type": "text",
       "season": {
         "keywords": [
-          "{title} {seasonCode}",
-          "{title} {year}"
+          "{title} {seasonCode}"
         ],
         "query": "/s/?q={query}&page=0&&video=on&orderby=99"
       },
