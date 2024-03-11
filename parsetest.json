@@ -89,7 +89,7 @@
     },
     "magnetdl": {
       "name": "MAGNETDL",
-      "enabled": true,
+      "enabled": false,
       "languages": ["en"],
       "base_url": "https://www.magnetdl.com",
       "fallback_urls": ["https://torrentquest.com"],
