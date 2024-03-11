@@ -37,24 +37,64 @@
             "\"": ""
         }
     },
-  "thepiratebaytext": {
-    "name": "PBAY",
+    "thepiratebaytext": {
+      "name": "PBAY",
+      "enabled": true,
+      "response_type": "text",
+      "languages": ["en"],
+        "base_url": "https://pirateproxylive.org",
+        "fallback_urls": [
+          "https://pirateproxy.live",
+          "https://thepiratebay.party",
+          "https://thepiratebay.org",
+          "https://thepiratebay.fun",
+          "https://thepiratebay.asia",
+          "https://tpb.party",
+          "https://thepiratebay3.org",
+          "https://thehiddenbay.com",
+          "https://piratebay.live",
+          "https://thepiratebay.zone"
+        ],
+        "movie": {
+          "query": "/s/?q={query}&page=0&&video=on&orderby=99",
+          "keywords": "{title} {year}"
+        },
+        "season": {
+          "query": "/s/?q={query}&page=0&&video=on&orderby=99",
+          "keywords": [
+            "{title} {seasonCode}",
+            "{title} season",
+            "{title} {year} {seasonCode}",
+            "{title} {year} season"
+        ]
+        },
+        "episode": {
+          "query": "/s/?q={query}&page=0&&video=on&orderby=99",
+          "keywords": [
+            "{title} {episodeCode}",
+            "{title} {year} {episodeCode}"
+        ]
+        },
+        "html_parser": {
+          "peers": "row.querySelector('td:nth-child(4)') ? row.querySelector('td:nth-child(4)').textContent : ''",
+          "row": "doc.querySelectorAll('tbody tr')",
+          "seeds": "row.querySelector('td:nth-child(3)') ? row.querySelector('td:nth-child(3)').textContent : ''",
+          "size": "row.querySelector('font') ? row.querySelector('font').textContent.split(',')[1].replace(/size/i,'') : ''",
+          "title": "row.querySelector('div') ? row.querySelector('div').textContent : ''",
+          "url": "row.querySelector('td:nth-child(2) a:nth-child(2)') ? row.querySelector('td:nth-child(2) a:nth-child(2)').getAttribute('href') : ''"
+        },
+        "title_replacement": {
+          "\"": "",
+          "'s": "s"
+        }
+      },
+  "TESTING": {
+    "name": "TEST",
     "enabled": true,
     "response_type": "text",
     "languages": ["en"],
       "base_url": "https://pirateproxylive.org",
-      "fallback_urls": [
-        "https://pirateproxy.live",
-        "https://thepiratebay.party",
-        "https://thepiratebay.org",
-        "https://thepiratebay.fun",
-        "https://thepiratebay.asia",
-        "https://tpb.party",
-        "https://thepiratebay3.org",
-        "https://thehiddenbay.com",
-        "https://piratebay.live",
-        "https://thepiratebay.zone"
-      ],
+      "fallback_urls": [],
       "movie": {
         "query": "/s/?q={query}&page=0&&video=on&orderby=99",
         "keywords": "{title} {year}"
@@ -76,10 +116,10 @@
       ]
       },
       "html_parser": {
-        "peers": "row.querySelector('td:nth-child(4)') ? row.querySelector('td:nth-child(4)').textContent : ''",
         "row": "doc.querySelectorAll('tbody tr')",
-        "seeds": "row.querySelector('td:nth-child(3)') ? row.querySelector('td:nth-child(3)').textContent : ''",
-        "size": "row.querySelector('font') ? row.querySelector('font').textContent.split(',')[1].replace(/size/i,'') : ''",
+        "peers": "row.querySelector('td:nth-child(7)') ? row.querySelector('td:nth-child(7)').textContent : ''",
+        "seeds": "row.querySelector('td:nth-child(6)') ? row.querySelector('td:nth-child(6)').textContent : ''",
+        "size": "row.querySelector('td:nth-child(5)') ? row.querySelector('td:nth-child(5)').textContent.split(',')[1].replace(/size/i,'') : ''",
         "title": "row.querySelector('div') ? row.querySelector('div').textContent : ''",
         "url": "row.querySelector('td:nth-child(2) a:nth-child(2)') ? row.querySelector('td:nth-child(2) a:nth-child(2)').getAttribute('href') : ''"
       },
