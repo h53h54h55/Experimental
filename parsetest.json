@@ -28,7 +28,7 @@
             "{title} season",
             "{title} {year} {seasonCode}",
             "{title} {year} season"
-        ],
+        ]
         },
         "json_format": {
             "title": "name",
