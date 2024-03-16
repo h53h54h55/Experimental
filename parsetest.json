@@ -43,7 +43,7 @@
       },
       "html_parser": {
         "peers": "row.querySelector('td:nth-child(4)') ? row.querySelector('td:nth-child(4)').textContent : ''",
-        "row": "doc.querySelectorAll('tbody tr')",
+        "row": "document.querySelectorAll('tbody tr')",
         "seeds": "row.querySelector('td:nth-child(3)') ? row.querySelector('td:nth-child(3)').textContent : ''",
         "size": "row.querySelector('font') ? row.querySelector('font').textContent.split(',')[1].replace(/size/i,'') : ''",
         "title": "row.querySelector('div') ? row.querySelector('div').textContent : ''",
