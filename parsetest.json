@@ -45,10 +45,10 @@
       "html_parser": {
         "row": "document.querySelectorAll('tbody tr')",
         "peers": "row.querySelector('td:nth-child(7)').textContent",
-        "seeds": "row.querySelector('td:nth-child(6)').textContent : ''",
-        "size": "row.querySelector('td:nth-child(5)').textContent : ''",
-        "title": "row.querySelector('td:nth-child(2)').textContent : ''",
-        "url": "row.querySelector('td:nth-child(2) a').getAttribute('href') : ''"
+        "seeds": "row.querySelector('td:nth-child(6)').textContent",
+        "size": "row.querySelector('td:nth-child(5)').textContent",
+        "title": "row.querySelector('td:nth-child(2)').textContent",
+        "url": "row.querySelector('td:nth-child(2) a').getAttribute('href')"
       },
       "title_replacement": {
         "\"": "",
