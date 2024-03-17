@@ -10,6 +10,8 @@
       "name": "PBAY",
       "enabled": true,
       "languages": ["en"],
+      "response_type": "text",
+    
       "base_url": "https://pirateproxylive.org",
       "fallback_urls": [
         "https://pirateproxy.live",
@@ -23,7 +25,6 @@
         "https://piratebay.live",
         "https://thepiratebay.zone"
       ],
-      "response_type": "text",
       "movie": {
         "query": "/s/?q={query}&page=0&&video=on&orderby=99",
         "keywords": "{title} {year}"   
@@ -51,7 +52,8 @@
       },
       "title_replacement": {
         "\"": "",
-        "'s": "s"
+        "'s": "s",
+        "-": "."
       }
   }
 }
