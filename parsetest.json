@@ -1,8 +1,8 @@
 {
   "_manifest" : {
-    "name": "ParseTest6",
-    "id": "lob.parse6",
-    "version": 6,
+    "name": "ParseTest5.1",
+    "id": "lob.parse5.1",
+    "version": 5.1,
     "classPath": "",
     "permaUrl": "https://raw.githubusercontent.com/h53h54h55/Experimental/main/parsetest.json"
   },
