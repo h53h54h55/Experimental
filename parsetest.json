@@ -1,8 +1,8 @@
 {
   "_manifest" : {
-    "name": "ParseTest",
-    "id": "lob.parse2",
-    "version": 1,
+    "name": "ParseTest3",
+    "id": "lob.parse3",
+    "version": 3,
     "classPath": "",
     "permaUrl": "https://raw.githubusercontent.com/h53h54h55/Experimental/main/parsetest.json"
   },
@@ -43,7 +43,7 @@
         ]
       },
       "html_parser": {
-        "row": "document.querySelectorAll('tbody tr')",
+        "row": "doc.querySelectorAll('tbody tr')",
         "peers": "row.querySelector('td:nth-child(7)') ? row.querySelector('td:nth-child(7)').textContent : ''",
         "seeds": "row.querySelector('td:nth-child(6)') ? row.querySelector('td:nth-child(6)').textContent : ''",
         "size": "row.querySelector('font') ? row.querySelector('font').textContent.split(',')[1].replace(/size/i,'') : ''",
