@@ -1,8 +1,8 @@
 {
   "_manifest" : {
-    "name": "ParseTest5.1",
-    "id": "lob.parse5.1",
-    "version": 5.1,
+    "name": "ParseTest5.2",
+    "id": "lob.parse5.2",
+    "version": 5.2,
     "classPath": "",
     "permaUrl": "https://raw.githubusercontent.com/h53h54h55/Experimental/main/parsetest.json"
   },
@@ -44,11 +44,11 @@
       },
       "html_parser": {
         "row": "doc.querySelectorAll('tbody tr')",
-        "peers": "row.querySelector('td:nth-child(7)').textContent",
-        "seeds": "row.querySelector('td:nth-child(6)').textContent",
-        "size": "row.querySelector('td:nth-child(5)').textContent",
-        "title": "row.querySelector('td:nth-child(2)').textContent",
-        "url": "row.querySelector('td:nth-child(2) a').getAttribute('href')"
+        "peers": "row.querySelector('td:nth-child(7)') ? row.querySelector('td:nth-child(7)').textContent : ''",
+        "seeds": "row.querySelector('td:nth-child(6)') ? row.querySelector('td:nth-child(6)').textContent : ''",
+        "size": "row.querySelector('font') ? row.querySelector('font').textContent.split(',')[1].replace(/size/i,'') : ''",
+        "title": "row.querySelector('tr:nth-child(1) > td:nth-child(2)').textContent : ''",
+        "url": "row.querySelector('td:nth-child(2) a:nth-child(2)') ? row.querySelector('td:nth-child(2) a:nth-child(2)').getAttribute('href') : ''"
       },
       "title_replacement": {
         "\"": "",
