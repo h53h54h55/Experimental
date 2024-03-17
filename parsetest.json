@@ -1,8 +1,8 @@
 {
   "_manifest" : {
-    "name": "ParseTest4",
-    "id": "lob.parse4",
-    "version": 4,
+    "name": "ParseTest5",
+    "id": "lob.parse5",
+    "version": 5,
     "classPath": "",
     "permaUrl": "https://raw.githubusercontent.com/h53h54h55/Experimental/main/parsetest.json"
   },
@@ -48,12 +48,11 @@
         "seeds": "row.querySelector('td:nth-child(6)').textContent : ''",
         "size": "row.querySelector('td:nth-child(5)').textContent : ''",
         "title": "row.querySelector('td:nth-child(2)').textContent : ''",
-        "url": "row.querySelector('td:nth-child(4) a').getAttribute('href') : ''"
+        "url": "row.querySelector('td:nth-child(2) a').getAttribute('href') : ''"
       },
       "title_replacement": {
         "\"": "",
-        "'s": "s",
-        "-": "."
+        "'s": "s"
       }
   }
 }
