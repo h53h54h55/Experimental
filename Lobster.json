@@ -1,10 +1,10 @@
-{
+xper{
   "_manifest" : {
     "name": "Lobsterv1.1",
     "id": "lob.express",
     "version": 1.0,
     "classPath": "",
-    "permaUrl": "https://raw.githubusercontent.com/h53h54h55/Syncler/main/Lobster.json"
+    "permaUrl": "https://raw.githubusercontent.com/h53h54h55/Experimental/main/Lobster.json"
   },
    "thepiratebaytext": {
       "name": "PBAY",
