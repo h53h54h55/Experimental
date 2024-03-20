@@ -37,7 +37,7 @@
       "season": {
       "query": "/s/?q={query}&page=0&&video=on&orderby=99",
       "keywords": [
-            "{title} {seasonCode}", "{title} season"
+            "{title} {seasonCode}", "{title} season, {title}"
         ]
       },
       "html_parser": {
