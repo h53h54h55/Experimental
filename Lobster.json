@@ -32,11 +32,11 @@
       },
       "episode": {
         "query": "/s/?q={query}&page=0&&video=on&orderby=99",
-        "keywords": ["{title}"]
+        "keywords": ["{title}","{episodeCode}"]
       },
       "season": {
       "query": "/s/?q={query}&page=0&&video=on&orderby=99",
-      "keywords": ["{title}"]
+      "keywords": ["{title}", "{seasonCode}"]
       },
       "html_parser": {
         "row": "doc.querySelectorAll('tbody tr')",
