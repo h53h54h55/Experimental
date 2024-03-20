@@ -6,7 +6,7 @@
     "classPath": "",
     "permaUrl": "https://raw.githubusercontent.com/h53h54h55/Experimental/main/parsetest.json"
   },
-  "thepiratebaytext": {
+   "thepiratebaytext": {
       "name": "PBAY",
       "enabled": true,
       "languages": ["en"],
@@ -32,13 +32,11 @@
       },
       "episode": {
         "query": "/s/?q={query}&page=0&&video=on&orderby=99",
-        "keywords": ["{title} {episodeCode}"]
+        "keywords": ["{title}", "{title} {episodeCode}"]
       },
       "season": {
       "query": "/s/?q={query}&page=0&&video=on&orderby=99",
-      "keywords": [
-            "{title} {seasonCode}"
-        ]
+      "keywords": ["{title}", "{title} {seasonCode}"]
       },
       "html_parser": {
         "row": "doc.querySelectorAll('tbody tr')",
