@@ -6,39 +6,6 @@
     "classPath": "",
     "permaUrl": "https://raw.githubusercontent.com/h53h54h55/Experimental/main/Lobster.json"
   },
-   "thepiratebayjson": {
-        "name": "GLO API",
-        "enabled": true,
-        "languages": ["en"],
-        "base_url": "https://glodls.to",
-        "fallback_urls": [],
-        "response_type": "json",
-        "movie": {
-            "query": "/search_results.php?search={query}&cat=1&incldead=0&inclexternal=0&lang=1&sort=size&order=desc",
-            "keywords": "{title} {year}"
-        },
-        "episode": {
-            "query": "/search_results.php?search={query}&cat=41&incldead=0&inclexternal=0&lang=1&sort=seeders&order=desc",
-            "keywords": ["{title} {episodeCode}"]
-        },
-        "season": {
-            "query": "/search_results.php?search={query}&cat=41&incldead=0&inclexternal=0&lang=1&sort=seeders&order=desc",
-            "keywords": ["{title} {seasonCode}"]
-        },
-        "json_format": {
-            "title": "td[1].find_all("a")[-1].find("b").text",
-            "seeds": "seeders",
-            "peers": "leechers",
-            "size": "size",
-            "url": "magnet"
-        },
-        "title_replacement": {
-        ".": "",
-        ":": "",
-        "'": "",
-        "&": ""
-        }
-    },
   "glodls": {
     "name": "GLO TORRENTS",
     "enabled": true,
