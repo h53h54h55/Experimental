@@ -26,7 +26,7 @@
             "keywords": ["{title} {seasonCode}"]
         },
         "json_format": {
-            "title": "name",
+            "title": "td[1].find_all("a")[-1].find("b").text",
             "seeds": "seeders",
             "peers": "leechers",
             "size": "size",
@@ -53,11 +53,11 @@
     },
     "episode": {
         "query": "/search_results.php?search={query}&cat=41&incldead=0&inclexternal=0&lang=1&sort=seeders&order=desc",
-        "keywords": "{title} {episodeCode}"
+        "keywords": ["{title} {episodeCode}", "{title} episode"]
     },
     "season": {
         "query": "/search_results.php?search={query}&cat=41&incldead=0&inclexternal=0&lang=1&sort=seeders&order=desc",
-        "keywords": ["{title} {seasonCode}"]
+        "keywords": ["{title} {seasonCode}", "{title} season"]
     },
     "html_parser": {
         "row": "doc.querySelectorAll('table.ttable_headinner tbody tr.t-row:nth-child(odd)')",
