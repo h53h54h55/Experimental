@@ -1,6 +1,6 @@
 {
   "_manifest" : {
-    "name": "Lobster Test",
+    "name": "Lobster - Test",
     "id": "lob.test",
     "version": 1.0,
     "classPath": "",
@@ -27,7 +27,7 @@
         "keywords": ["{title} {seasonCode}", "{title} season","{title} {year} {seasonCode}", "{title} {year} season"]
     },
     "html_parser": {
-        "row": "doc.querySelectorAll('table.ttable_headinner tbody tr.t-row:nth-child(odd)')",
+        "row": "doc.querySelectorAll('table.table_headinner tbody tr.t-row:nth-child(odd)')",
         "title": "row.querySelector('td:nth-child(2) a:nth-child(2)').textContent",
         "peers": "row.querySelector('td:nth-child(7)').textContent",
         "seeds": "row.querySelector('td:nth-child(6)').textContent",
