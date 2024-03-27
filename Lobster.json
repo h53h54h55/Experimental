@@ -1,7 +1,7 @@
 {
   "_manifest" : {
-    "name": "Lobsterv1",
-    "id": "lob.testv1",
+    "name": "Lobster Test",
+    "id": "lob.test",
     "version": 1.0,
     "classPath": "",
     "permaUrl": "https://raw.githubusercontent.com/h53h54h55/Experimental/main/Lobster.json"
