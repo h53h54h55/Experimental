@@ -7,7 +7,7 @@
     "packages": [
         {
             "manifest": "https://raw.githubusercontent.com/h53h54h55/Experimental/main/Manifest-Lobster.json",
-            "description": "Full Lobster Dinner - Every source included"
+            "description": "Testing purposes only"
         }
     ],
     "cacheServers": [
