@@ -6,25 +6,30 @@
     "classPath": "",
     "permaUrl": "https://raw.githubusercontent.com/h53h54h55/Experimental/main/Lobster.json"
   },
-  "torrentio": {
-        "name": "TORRENTIO",
-        "enabled": true,
-        "languages": ["en"],
-        "base_url": "https:\/\/torrentio.strem.fun",
-        "fallback_urls": [],
-        "response_type": "json",
-        "movie": {
-            "query": "\/stream\/series\/{query}:{season}:{episode}.json",
-            "keywords": "{ImdbId}"
-        },
-        "series": {
-            "query": "/q.php?q={query}&cat=208,205",
-            "keywords": ["{title} {episodeCode}", "{title} episode", "{title} {year} {episodeCode}", "{title} {year} episode"]
-        },
-        "json_format": {
-            "results": "streams",
-            "title": "title",
-            "hash": "info_hash"
-        }
+ "rutor": {
+    "name": "RUTOR",
+    "enabled": true,
+    "languages": ["en"],
+    "base_url": "http://6tor.org",
+    "response_type": "text",
+    "movie": {
+      "query": "/search/0/1/000/0/{query}",
+      "keywords": "{title} {year}"
+    },
+    "episode": {
+      "query": "/search/0/4/000/0/{query}",
+      "keywords": "{title} {season}"
+    },
+    "html_parser": {
+      "row": "doc.querySelectorAll('tr.gai, tr.tum')",
+      "title": "row.querySelector('td:nth-child(2)').innerText",
+      "peers": "row.querySelector('td:nth-child(5) span.green').innerText",
+      "seeds": "row.querySelector('td:nth-child(5) span.red').innerText",
+      "size": "row.querySelector('td:nth-child(4)').innerText",
+      "url": "row.querySelector('td:nth-child(2) a:nth-child(1)').getAttribute('href')"
+    }
   }
 }
+
+
+
