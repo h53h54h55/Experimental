@@ -14,11 +14,11 @@
     "response_type": "text",
     "movie": {
       "query": "/search/0/1/000/0/{query}",
-      "keywords": "{title} {year}"
+      "keywords": "{title}"
     },
-    "episode": {
+    "season": {
       "query": "/search/0/4/000/0/{query}",
-      "keywords": "{title} {season}"
+      "keywords": "{title}"
     },
     "html_parser": {
       "row": "doc.querySelectorAll('tr.gai, tr.tum')",
