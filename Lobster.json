@@ -30,10 +30,7 @@
       "peers": "row.querySelector('td:nth-child(5) span.green').innerText",
       "seeds": "row.querySelector('td:nth-child(5) span.red').innerText",
       "size": "row.querySelector('td:nth-child(4)').innerText",
-      "url": "row.querySelector('td:nth-child(2) a:nth-child(1)').getAttribute('href')"
+      "url": "row.querySelector('td:nth-child(2) a').getAttribute('href')"
     }
   }
 }
-
-#index > table > tbody > tr:nth-child(2) > td:nth-child(2) > a:nth-child(2)
-
