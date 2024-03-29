@@ -15,9 +15,9 @@
         "response_type": "json",
         "movie": {
             "query": "\/stream\/series\/{query}:{season}:{episode}.json",
-            "keywords": "{showImdbId}"
+            "keywords": "{ImdbId}"
         },
-        "episode": {
+        "series": {
             "query": "/q.php?q={query}&cat=208,205",
             "keywords": ["{title} {episodeCode}", "{title} episode", "{title} {year} {episodeCode}", "{title} {year} episode"]
         },
