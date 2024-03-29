@@ -20,6 +20,10 @@
       "query": "/search/0/4/000/0/{query}",
       "keywords": "{title}"
     },
+   "episode": {
+      "query": "/search/0/4/000/0/{query}",
+      "keywords": "{title}"
+    },
     "html_parser": {
       "row": "doc.querySelectorAll('tr.gai, tr.tum')",
       "title": "row.querySelector('td:nth-child(2)').innerText",
