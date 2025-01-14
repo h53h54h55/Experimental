@@ -1,10 +1,10 @@
 {
   "_manifest" : {
-    "name": "Test”,
-    "id": "lob.test-v1",
-    "version": 1,
+    "name": "Test1.1",
+    "id": "lob.test.1",
+    "version": 1.4,
     "classPath": "",
-    "permaUrl": "https://raw.githubusercontent.com/h53h54h55/Syncler/experimental/test.json”
+    "permaUrl": "https://raw.githubusercontent.com/h53h54h55/Experimental/main/test.json"
   },
    "torrentio": {
     "name": "Torrentio",
