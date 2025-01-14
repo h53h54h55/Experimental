@@ -1,0 +1,34 @@
+{
+  "_manifest" : {
+    "name": "Lobster Test”,
+    "id": "lob.test-v1",
+    "version": 1,
+    "classPath": "",
+    "permaUrl": "https://raw.githubusercontent.com/h53h54h55/Syncler/experimental/test.json”,
+  "type": "express"
+
+  },
+   "torrentio": {
+    "name": "Torrentio",
+    "enabled": true,
+    "languages": [
+      "en"
+    ],
+    "base_url": "https://torrentio.strem.fun",
+    "response_type": "json",
+    "movie": {
+      "query": "/stream/movie/{query}.json",
+      "keywords": "{imdbId}"
+    },
+    "episode": {
+      "query": "/stream/series/{query}:{season}:{episode}.json",
+      "keywords": "{showImdbId}"
+    },
+    "json_format": {
+      "results": "streams",
+      "title": "title",
+      "hash": "infoHash"
+    },
+ 
+  }
+}
