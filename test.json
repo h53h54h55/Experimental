@@ -5,7 +5,7 @@
     "version": 1,
     "classPath": "",
     "permaUrl": "https://raw.githubusercontent.com/h53h54h55/Syncler/experimental/test.json”,
-  "type": "express"
+    "type": "express"
 
   },
    "torrentio": {
@@ -28,7 +28,6 @@
       "results": "streams",
       "title": "title",
       "hash": "infoHash"
-    },
- 
-  },
+    }
+  }
 }
