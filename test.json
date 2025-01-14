@@ -4,9 +4,7 @@
     "id": "lob.test-v1",
     "version": 1,
     "classPath": "",
-    "permaUrl": "https://raw.githubusercontent.com/h53h54h55/Syncler/experimental/test.json”,
-    "type": "express"
-
+    "permaUrl": "https://raw.githubusercontent.com/h53h54h55/Syncler/experimental/test.json”
   },
    "torrentio": {
     "name": "Torrentio",
