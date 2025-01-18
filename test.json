@@ -6,13 +6,13 @@
     "classPath": "",
     "permaUrl": "https://raw.githubusercontent.com/h53h54h55/Experimental/main/test.json"
   },
-   "torrentio": {
-    "name": "Torrentio",
+   "superflix": {
+    "name": "Superflix",
     "enabled": true,
     "languages": [
       "en"
     ],
-    "base_url": "https://torrentio.strem.fun",
+    "base_url": "https://23dfbfad8cb2-stremio-addon-superflix.baby-beamup.club",
     "response_type": "json",
     "movie": {
       "query": "/stream/movie/{query}.json",
@@ -24,8 +24,9 @@
     },
     "json_format": {
       "results": "streams",
-      "title": "title",
-      "hash": "infoHash"
+      "title": "description",
+      "quality": "name",
+      "url": "url"
     }
   }
 }
